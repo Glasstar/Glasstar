@@ -1,0 +1,15 @@
+conf t
+interface gi**
+
+#Xoá mode access hoặc trunk
+no switchport ...
+no switchport access vlan
+no switchport trunk
+
+#Thêm access hoặc trunk
+switchport mode access
+switchport access vlan ...
+
+switchport mode trunk
+switchport mode trunk allowed vlan all
+switchport trunk native vlan ...
